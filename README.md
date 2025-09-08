@@ -5,7 +5,7 @@ Tracks new listings on online marketplaces and posts to webhooks.
 ## Currently supported sites:
 
 - Blocket
-- eBay
+- eBay (Some anti-bot protection may be present)
 - Mercari JP
 - ~~Mercari US~~ (Support currently discontinued due to tightened Cloudflare bot blocking)
 - Rakuma
