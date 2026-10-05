@@ -21,4 +21,6 @@ jobs:
 
       - name: Lancer le tracker
         working-directory: marketplace_tracker
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: python marketplace_tracker.py
