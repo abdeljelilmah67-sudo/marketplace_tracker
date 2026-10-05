@@ -1,26 +1,11 @@
-name: Mercari Tracker
+name: Test GitHub
 
 on:
   workflow_dispatch:
 
 jobs:
-  tracker:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Télécharger le dépôt
-        uses: actions/checkout@v4
-
-      - name: Installer Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Installer les dépendances
-        run: pip install -r marketplace_tracker/requirements.txt
-
-      - name: Lancer le tracker
-        working-directory: marketplace_tracker
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        run: python marketplace_tracker.py
+      - name: Test
+        run: echo "GitHub fonctionne"
